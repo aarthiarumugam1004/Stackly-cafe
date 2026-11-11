@@ -1,0 +1,98 @@
+export const GALLERY_CATEGORIES = [
+  'All',
+  'Coffee',
+  'Food & Pastries',
+  'Cafe Interiors',
+  'Baristas',
+  'Special Events',
+]
+
+export const GALLERY_ITEMS = [
+  {
+    id: 'g1',
+    title: 'Morning Sun & Velvet Cappuccino',
+    category: 'Coffee',
+    image: '/images/hero-cafe.jpg',
+    caption: 'Freshly pulled espresso steamed to velvet microfoam at our main marble bar.',
+    featured: true,
+  },
+  {
+    id: 'g2',
+    title: 'The Caramel Leather Lounge',
+    category: 'Cafe Interiors',
+    image: '/images/cafe-interior.jpg',
+    caption: 'Sunlit oak tables, brass pendant lamps, and tufted leather banquettes.',
+    featured: true,
+  },
+  {
+    id: 'g3',
+    title: 'Hand-Poured Rosetta Craft',
+    category: 'Baristas',
+    image: '/images/barista-craft.jpg',
+    caption: 'Head barista Elena pouring delicate free-pour latte art in matte stoneware.',
+  },
+  {
+    id: 'g4',
+    title: 'Single-Origin Roast & Pour-Over',
+    category: 'Coffee',
+    image: '/images/coffee-beans.jpg',
+    caption: 'Small-batch roasted Arabica beans measured fresh before V60 extraction.',
+  },
+  {
+    id: 'g5',
+    title: 'Triple Dark Chocolate Ganache',
+    category: 'Food & Pastries',
+    image: '/images/cake-chocolate.jpg',
+    caption: 'Our signature espresso-infused chocolate celebration cake from the pastry bench.',
+  },
+  {
+    id: 'g6',
+    title: 'Bistro Brioche Burger',
+    category: 'Food & Pastries',
+    image: '/images/burger.jpg',
+    caption: 'Seared double burger on warm sesame brioche served for lunch & evening socials.',
+  },
+  {
+    id: 'g7',
+    title: 'Iced Espresso Ribbons',
+    category: 'Coffee',
+    image: '/images/cold-coffee.jpg',
+    caption: 'Cold milk cascading with freshly pulled double espresso over hand-cut ice.',
+  },
+  {
+    id: 'g8',
+    title: 'Golden Morning Croissants',
+    category: 'Food & Pastries',
+    image: '/images/butter-croissant.jpg',
+    caption: 'Flaky French butter croissants fresh out of the dawn pastry oven.',
+  },
+  {
+    id: 'g9',
+    title: 'Acoustic Weekend & Cupping Night',
+    category: 'Special Events',
+    image: '/images/cafe-seating.jpg',
+    caption: 'Cozy weekend seating set for community coffee tastings and birthday gatherings.',
+  },
+  {
+    id: 'g10',
+    title: 'Classic Espresso Tiramisu',
+    category: 'Food & Pastries',
+    image: '/images/dessert-tiramisu.jpg',
+    caption: 'Hand-layered mascarpone cream dusted with dark cocoa for afternoon pairings.',
+  },
+  {
+    id: 'g11',
+    title: 'Warm Cappuccino Table Service',
+    category: 'Baristas',
+    image: '/images/hot-cappuccino.jpg',
+    caption: 'Served hot in handmade ceramic cups on walnut cafe tables.',
+  },
+  {
+    id: 'g12',
+    title: 'Celebration Cheesecake Platter',
+    category: 'Special Events',
+    image: '/images/cake-cheesecake.jpg',
+    caption: 'Strawberry-glazed Basque cheesecake prepared for birthday & party reservations.',
+  },
+]
+

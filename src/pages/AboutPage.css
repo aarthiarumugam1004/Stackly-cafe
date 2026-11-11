@@ -1,0 +1,227 @@
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.about-story-media {
+  position: relative;
+}
+
+.about-main-photo {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-experience-card {
+  position: absolute;
+  bottom: -20px;
+  left: 24px;
+  background-color: var(--chocolate-dark);
+  color: var(--bg-cream);
+  padding: 18px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(212, 163, 115, 0.35);
+  box-shadow: var(--shadow-lg);
+}
+
+.about-experience-card strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--gold-accent);
+}
+
+.about-experience-card span {
+  font-size: 0.85rem;
+  color: rgba(251, 247, 242, 0.82);
+}
+
+.about-story-content p {
+  color: var(--text-secondary);
+  line-height: 1.76;
+  margin-bottom: 16px;
+}
+
+.about-story-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Mission & Vision */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.mv-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  border: 1px solid var(--border-warm);
+  box-shadow: var(--shadow-sm);
+}
+
+.mv-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: var(--bg-beige);
+  color: var(--coffee-brown);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.mv-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--chocolate-dark);
+  margin-bottom: 10px;
+}
+
+.mv-card p {
+  color: var(--text-secondary);
+  line-height: 1.72;
+}
+
+/* Craftsmanship */
+.craft-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.craft-photo-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.craft-photo-pair img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.craft-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.pillar-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--border-warm);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: var(--coffee-brown);
+  color: var(--gold-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.pillar-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--chocolate-dark);
+  margin-bottom: 8px;
+}
+
+.pillar-card p {
+  font-size: 0.91rem;
+  color: var(--text-secondary);
+  line-height: 1.62;
+}
+
+/* Milestones */
+.milestones-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.milestone-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 163, 115, 0.25);
+  border-radius: var(--radius-md);
+  padding: 26px 22px;
+}
+
+.milestone-year {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--gold-accent);
+  margin-bottom: 10px;
+}
+
+.milestone-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--bg-white);
+  margin-bottom: 8px;
+}
+
+.milestone-card p {
+  font-size: 0.9rem;
+  color: rgba(251, 247, 242, 0.78);
+  line-height: 1.65;
+}
+
+.about-bottom-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .about-story-grid,
+  .craft-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .milestones-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .mission-vision-grid,
+  .craft-pillars-grid,
+  .milestones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-experience-card {
+    position: static;
+    margin-top: 14px;
+  }
+}
+
