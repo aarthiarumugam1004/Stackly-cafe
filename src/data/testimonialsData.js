@@ -1,4 +1,6 @@
-export const SPECIAL_OFFERS = [
+import { resolveItemImages } from '../utils/assetUrl'
+
+export const SPECIAL_OFFERS = resolveItemImages([
   {
     id: 'offer-morning',
     tag: 'Morning Ritual • Save 20%',
@@ -29,7 +31,7 @@ export const SPECIAL_OFFERS = [
     targetPath: '/products',
     image: '/images/burger.jpg',
   },
-]
+])
 
 export const CAFE_SPECIALTIES = [
   {

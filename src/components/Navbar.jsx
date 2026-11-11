@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { Search, ShoppingBag, Menu, X, User } from 'lucide-react'
 import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
+import { assetUrl } from '../utils/assetUrl'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -64,7 +65,7 @@ export default function Navbar() {
           >
             <span className="logo-emblem">
               <img
-                src="/images/stackly-logo.png"
+                src={assetUrl('/images/stackly-logo.png')}
                 alt="Stackly Cafe Logo"
                 className="logo-img"
               />
@@ -179,7 +180,7 @@ export default function Navbar() {
       >
         <div className="mobile-nav-header">
           <span className="mobile-nav-brand">
-            <img src="/images/stackly-logo.png" alt="Stackly Cafe" className="mobile-logo-img" />
+            <img src={assetUrl('/images/stackly-logo.png')} alt="Stackly Cafe" className="mobile-logo-img" />
             Stackly Cafe
           </span>
           <button

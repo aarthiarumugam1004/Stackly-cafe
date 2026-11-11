@@ -12,6 +12,7 @@ import {
   CheckCircle2,
 } from 'lucide-react'
 import SocialXIcon from './SocialXIcon'
+import { assetUrl } from '../utils/assetUrl'
 import './Footer.css'
 
 const QUICK_LINKS = [
@@ -62,7 +63,7 @@ export default function Footer() {
           <Link to="/" className="footer-logo">
             <span className="footer-logo-badge">
               <img
-                src="/images/stackly-logo.png"
+                src={assetUrl('/images/stackly-logo.png')}
                 alt="Stackly Cafe Logo"
                 className="footer-logo-img"
               />

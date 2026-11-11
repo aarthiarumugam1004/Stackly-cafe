@@ -1,3 +1,5 @@
+import { resolveItemImages } from '../utils/assetUrl'
+
 export const formatPrice = (amount) =>
   `₹${Math.round(amount).toLocaleString('en-IN')}`
 
@@ -40,7 +42,7 @@ export const FOOD_EXTRAS = [
   { label: 'Extra Aged Cheddar / Dip', price: 75 },
 ]
 
-export const CAFE_PRODUCTS = [
+export const CAFE_PRODUCTS = resolveItemImages([
   // 1. Hot Coffee
   {
     id: 'velvet-cappuccino',
@@ -477,5 +479,5 @@ export const CAFE_PRODUCTS = [
     origin: 'In-House Patisserie',
     isBeverage: false,
   },
-]
+])
 

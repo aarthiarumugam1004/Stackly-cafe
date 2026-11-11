@@ -1,4 +1,6 @@
-export const CAFE_SERVICES = [
+import { resolveItemImages } from '../utils/assetUrl'
+
+export const CAFE_SERVICES = resolveItemImages([
   {
     id: 'dine-in',
     title: 'Dine-In Service',
@@ -119,5 +121,5 @@ export const CAFE_SERVICES = [
       'Quiet reading & laptop-friendly lounge zones',
     ],
   },
-]
+])
 

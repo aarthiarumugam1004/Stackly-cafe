@@ -1,10 +1,11 @@
+import { assetUrl } from '../utils/assetUrl'
 import './PageHero.css'
 
 export default function PageHero({ eyebrow, title, subtitle, image = '/images/hero-cafe.jpg' }) {
   return (
     <section
       className="page-hero"
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${assetUrl(image)})` }}
     >
       <div className="page-hero-overlay" />
       <div className="container page-hero-content">

@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useCart } from '../context/CartContext'
+import { assetUrl } from '../utils/assetUrl'
 import './AuthPages.css'
 
 export default function RegisterPage() {
@@ -92,14 +93,14 @@ export default function RegisterPage() {
   return (
     <section
       className="auth-page page-fade"
-      style={{ backgroundImage: 'url(/images/cafe-interior.jpg)' }}
+      style={{ backgroundImage: `url(${assetUrl('/images/cafe-interior.jpg')})` }}
     >
       <div className="auth-overlay" />
 
       <div className="auth-card">
         <div
           className="auth-aside"
-          style={{ backgroundImage: 'url(/images/coffee-beans.jpg)' }}
+          style={{ backgroundImage: `url(${assetUrl('/images/coffee-beans.jpg')})` }}
         >
           <div className="auth-aside-overlay" />
           <div className="auth-aside-content">

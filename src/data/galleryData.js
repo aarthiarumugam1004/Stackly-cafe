@@ -1,3 +1,5 @@
+import { resolveItemImages } from '../utils/assetUrl'
+
 export const GALLERY_CATEGORIES = [
   'All',
   'Coffee',
@@ -7,7 +9,7 @@ export const GALLERY_CATEGORIES = [
   'Special Events',
 ]
 
-export const GALLERY_ITEMS = [
+export const GALLERY_ITEMS = resolveItemImages([
   {
     id: 'g1',
     title: 'Morning Sun & Velvet Cappuccino',
@@ -94,5 +96,5 @@ export const GALLERY_ITEMS = [
     image: '/images/cake-cheesecake.jpg',
     caption: 'Strawberry-glazed Basque cheesecake prepared for birthday & party reservations.',
   },
-]
+])
 

@@ -19,6 +19,7 @@ import {
   CAFE_SPECIALTIES,
   CUSTOMER_REVIEWS,
 } from '../data/testimonialsData'
+import { assetUrl } from '../utils/assetUrl'
 import './HomePage.css'
 
 const ICON_MAP = {
@@ -45,7 +46,7 @@ export default function HomePage() {
       {/* 1. Hero Section */}
       <section
         className="hero-section"
-        style={{ backgroundImage: 'url(/images/hero-cafe.jpg)' }}
+        style={{ backgroundImage: `url(${assetUrl('/images/hero-cafe.jpg')})` }}
       >
         <div className="hero-overlay" />
         <div className="container hero-container">
@@ -211,14 +212,14 @@ export default function HomePage() {
           <div className="atmosphere-gallery">
             <div className="atmosphere-main-img">
               <img
-                src="/images/cafe-interior.jpg"
+                src={assetUrl('/images/cafe-interior.jpg')}
                 alt="Warm caramel leather seating and walnut tables inside Stackly Cafe"
                 loading="lazy"
               />
             </div>
             <div className="atmosphere-sub-img">
               <img
-                src="/images/barista-craft.jpg"
+                src={assetUrl('/images/barista-craft.jpg')}
                 alt="Barista pouring delicate latte art at the counter"
                 loading="lazy"
               />

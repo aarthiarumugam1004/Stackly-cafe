@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Coffee, Mail, Lock, Eye, EyeOff, CheckCircle2, Info } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import { useCart } from '../context/CartContext'
+import { assetUrl } from '../utils/assetUrl'
 import './AuthPages.css'
 
 export default function LoginPage() {
@@ -60,14 +61,14 @@ export default function LoginPage() {
   return (
     <section
       className="auth-page page-fade"
-      style={{ backgroundImage: 'url(/images/hero-cafe.jpg)' }}
+      style={{ backgroundImage: `url(${assetUrl('/images/hero-cafe.jpg')})` }}
     >
       <div className="auth-overlay" />
 
       <div className="auth-card">
         <div
           className="auth-aside"
-          style={{ backgroundImage: 'url(/images/cafe-interior.jpg)' }}
+          style={{ backgroundImage: `url(${assetUrl('/images/cafe-interior.jpg')})` }}
         >
           <div className="auth-aside-overlay" />
           <div className="auth-aside-content">

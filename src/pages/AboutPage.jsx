@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import PageHero from '../components/PageHero'
 import { CAFE_MILESTONES } from '../data/testimonialsData'
+import { assetUrl } from '../utils/assetUrl'
 import './AboutPage.css'
 
 const PILLARS = [
@@ -61,7 +62,7 @@ export default function AboutPage() {
         <div className="container about-story-grid">
           <div className="about-story-media">
             <img
-              src="/images/barista-craft.jpg"
+              src={assetUrl('/images/barista-craft.jpg')}
               alt="Stackly Cafe barista pouring latte art"
               className="about-main-photo"
             />
@@ -145,11 +146,11 @@ export default function AboutPage() {
 
             <div className="craft-photo-pair">
               <img
-                src="/images/coffee-beans.jpg"
+                src={assetUrl('/images/coffee-beans.jpg')}
                 alt="Freshly roasted Arabica coffee beans and pour-over dripper"
               />
               <img
-                src="/images/cafe-interior.jpg"
+                src={assetUrl('/images/cafe-interior.jpg')}
                 alt="Comfortable seating area at Stackly Cafe"
               />
             </div>
